@@ -1,12 +1,14 @@
-describe('ACME Bank', () => {
+describe('Hackathon Suite', () => {
     beforeEach(() => {
         // Start Applitools Visual AI Test
+        //TODO change appName to your App Name!
         cy.eyesOpen({
             appName: 'ACME Bank',
             testName: Cypress.currentTest.title,
         })
     })
-    it('Cypress: Quickstart', () => {
+    // The example test from Applitools
+    it.only('Cypress: Quickstart', () => {
         cy.visit('https://sandbox.applitools.com/bank?layoutAlgo=true');
 
         // Full Page - Visual AI Assertion
@@ -21,12 +23,23 @@ describe('ACME Bank', () => {
 
         cy.eyesCheckWindow({
             tag: "Main page",
-            layout: [
-                {selector: '.dashboardOverview_accountBalances__3TUPB'},
-                {selector: '.dashboardTable_dbTable___R5Du'}
-            ]
+            // Uncomment to apply coded Layout regions and have test pass
+            // layout: [
+            //     {selector: '.dashboardOverview_accountBalances__3TUPB'},
+            //     {selector: '.dashboardTable_dbTable___R5Du'}
+            // ]
         });
     })
+
+    //TODO create your test case here! Rename the test name according to your user journey
+    it('[your user journey #1]', () => {
+       
+    })
+
+    it('[your user journey #2]', () => {
+       
+    })
+
     afterEach(() => {
         // End Applitools Visual AI Test
         cy.eyesClose()
