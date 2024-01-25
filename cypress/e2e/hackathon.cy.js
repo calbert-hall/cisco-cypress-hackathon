@@ -8,7 +8,7 @@ describe('Hackathon Suite', () => {
         })
     })
     // The example test from Applitools
-    it.only('Cypress: Quickstart', () => {
+    it('Cypress: Quickstart', () => {
         cy.visit('https://sandbox.applitools.com/bank?layoutAlgo=true');
 
         // Full Page - Visual AI Assertion
@@ -43,5 +43,8 @@ describe('Hackathon Suite', () => {
     afterEach(() => {
         // End Applitools Visual AI Test
         cy.eyesClose()
+    })
+    after(() => {
+        
     })
 })

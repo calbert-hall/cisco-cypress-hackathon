@@ -5,7 +5,7 @@ Users of Cisco products have plenty of journeys through their products, with man
 With Cypress + Applitools, you can ensure these workflows are visually perfect at every stage in the development life cycle!
 
 ### Hackathon Parameters
-1. If you haven't already done so, clone the repo and ensure that you can run the sample Applitools test script. See tutorial info below for details. 
+1. If you haven't already done so, clone the repo and ensure that you can run the sample Applitools test script. See tutorial info below for details. Don't forget to set your API key in the `applitools.config.js` file!
 2. Choose Two user journeys that have at least three functional steps each. 
 3. Change the App Name to your App name in `hackathon.cy.js`. 
 4. Write and execute your first user journey within the first `it` in `hackathon.cy.js`. 
@@ -17,8 +17,12 @@ With Cypress + Applitools, you can ensure these workflows are visually perfect a
 #### Example User Journey: <br>
  [Cisco Login](https://id.cisco.com/) Workflow starting from [Cisco.com](https://www.cisco.com/). Each step of the process will have its own `cy.eyesCheckWindow` call, resulting in a 3+ step process in the user workflow. The code will go to cisco.com, take a capture, click the login button, take a capture, fill in the username + password and click login, then capture the post-login screen. Alternatily you could write this as a test to ensure the login screen failure appears upon false credentials. 
 
+### Additional Resources:
+[Eyes-Cypress Documentation](https://applitools.com/docs/api-ref/sdk-api/cypress/)
+<br>
+[Eyes-Cypress Browser/Device configuration](https://applitools.com/docs/api-ref/sdk-api/cypress/browserconfiguration)
 
-Below are the instructions for the Eyes-Cypress Quickstart project. You can follow these directions to ensure that you can run Applitools tests, from there create your own according to the hackathon constraints above!
+<i>Below are the instructions for the Eyes-Cypress Quickstart project. You can follow these directions to ensure that you can run Applitools tests, from there create your own according to the hackathon constraints above! </i>
 
 ### Applitools Example: Cypress in JavaScript
 

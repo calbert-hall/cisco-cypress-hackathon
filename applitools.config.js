@@ -5,6 +5,7 @@ module.exports = {
 
     //TODO Uncomment the below line and paste in your API key as an alternative to using an environment variable
     // apiKey: '',
+    serverUrl: 'https://ikaremeyes.applitools.com/', // Cisco Private Cloud Server URL
 
     batchName: 'Cypress Quickstart',
     // set the to true to debug eyes issues
