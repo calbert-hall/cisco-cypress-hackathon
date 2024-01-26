@@ -11,10 +11,11 @@ module.exports = {
     // set the to true to debug eyes issues
     showLogs: false,
 
-    // Select the browsers and devices to run your tests on via the Ultrafast Grid
+    // Select the browsers and chrome-emulated devices to run your tests on via the Ultrafast Grid
     browser: [
         {width: 800, height: 600, name: 'chrome'},
         {width: 1600, height: 1200, name: 'firefox'},
-        {width: 1024, height: 768, name: 'safari'}
+        {width: 1024, height: 768, name: 'safari'},
+        {deviceName: 'Galaxy S22', ScreenOrientation: 'portrait'}
     ]
 }

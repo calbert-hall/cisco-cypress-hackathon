@@ -7,7 +7,7 @@ describe('Hackathon Suite', () => {
             testName: Cypress.currentTest.title,
         })
     })
-    // The example test from Applitools
+    // The example test from Applitools. Feel free to use it.skip once you're developing your own tests. 
     it('Cypress: Quickstart', () => {
         cy.visit('https://sandbox.applitools.com/bank?layoutAlgo=true');
 
@@ -23,7 +23,7 @@ describe('Hackathon Suite', () => {
 
         cy.eyesCheckWindow({
             tag: "Main page",
-            // Uncomment to apply coded Layout regions and have test pass
+            //Uncomment to apply coded Layout regions and have test pass
             // layout: [
             //     {selector: '.dashboardOverview_accountBalances__3TUPB'},
             //     {selector: '.dashboardTable_dbTable___R5Du'}
@@ -43,8 +43,5 @@ describe('Hackathon Suite', () => {
     afterEach(() => {
         // End Applitools Visual AI Test
         cy.eyesClose()
-    })
-    after(() => {
-        
     })
 })
